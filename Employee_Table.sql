@@ -1,0 +1,67 @@
+-- I will create an employee table in this query.
+USE practice;
+DROP TABLE employees;
+CREATE TABLE employees (
+id INT AUTO_INCREMENT PRIMARY KEY,
+firstname varchar(50) NOT NULL,
+lastname varchar(50) NOT NULL,
+middlename varchar(50) DEFAULT '',
+age INT NOT NULL,
+status varchar(50) NOT NULL DEFAULT 'Employed'
+);
+
+INSERT INTO employees(firstname, lastname, age) VALUES
+('Dora', 'Smith', 58),
+('Liam', 'Johnson', 34),
+('Emma', 'Williams', 29),
+('Noah', 'Brown', 42),
+('Olivia', 'Jones', 31),
+('Ava', 'Garcia', 37),
+('Isabella', 'Miller', 45),
+('Sophia', 'Davis', 26),
+('Mia', 'Rodriguez', 39),
+('Charlotte', 'Martinez', 33),
+('Amelia', 'Hernandez', 41),
+('Harper', 'Lopez', 28),
+('Evelyn', 'Gonzalez', 36),
+('Abigail', 'Wilson', 40),
+('Ella', 'Anderson', 27),
+('Scarlett', 'Thomas', 32),
+('Grace', 'Taylor', 38),
+('Chloe', 'Moore', 35),
+('Victoria', 'Jackson', 43),
+('Riley', 'Martin', 30),
+('Aria', 'Lee', 25),
+('Lily', 'Perez', 44),
+('Hannah', 'Thompson', 39),
+('Layla', 'White', 33),
+('Aurora', 'Harris', 29),
+('Zoey', 'Sanchez', 37),
+('Nora', 'Clark', 41),
+('Hazel', 'Ramirez', 28),
+('Ellie', 'Lewis', 34),
+('Violet', 'Robinson', 32),
+('Lillian', 'Walker', 46),
+('Addison', 'Young', 31),
+('Stella', 'Allen', 36),
+('Natalie', 'King', 40),
+('Zoe', 'Wright', 26),
+('Leah', 'Scott', 38),
+('Audrey', 'Torres', 35),
+('Brooklyn', 'Nguyen', 33),
+('Bella', 'Hill', 27),
+('Claire', 'Flores', 42),
+('Skylar', 'Green', 30),
+('Lucy', 'Adams', 37),
+('Paisley', 'Nelson', 29),
+('Everly', 'Baker', 41),
+('Anna', 'Hall', 32),
+('Caroline', 'Rivera', 28),
+('Nova', 'Campbell', 36),
+('Genesis', 'Mitchell', 39),
+('Emilia', 'Carter', 34),
+('Kennedy', 'Roberts', 31),
+('Samantha', 'Gomez', 33);
+
+DESC employees;
+SELECT * FROM employees;
